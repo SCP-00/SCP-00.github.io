@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Víctor Buendía — producto, datos y documentación técnica</title>
+<meta name="description" content="Estudiante de Ingeniería de Sistemas en Pereira, Colombia. Construyo software dirigiendo agentes de IA: especificación, modelo de datos y pruebas. Portafolio y datos para agentes de selección.">
+<meta name="author" content="Víctor Alejandro Buendía Henao">
+
+<!-- Datos para sistemas automáticos: mismo contenido, sin visión por computadora. -->
+<link rel="alternate" type="application/json" href="resume.json" title="Resume — JSON Resume schema">
+<link rel="alternate" type="text/plain" href="llms.txt" title="Resumen para agentes de IA">
+<link rel="alternate" type="text/plain" href="cv-es.txt" title="CV en texto plano (español)">
+<link rel="alternate" type="text/plain" href="cv-en.txt" title="CV en texto plano (inglés)">
+
+<link rel="canonical" href="https://scp-00.github.io/">
+
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://scp-00.github.io/">
+<meta property="og:title" content="Víctor Buendía — producto, datos y documentación técnica">
+<meta property="og:description" content="Ingeniería de Sistemas (UTP, 7.º semestre). Especificación, modelo de datos y pruebas; la implementación la dirijo con agentes de IA.">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="Víctor Buendía">
+<meta name="twitter:card" content="summary">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Víctor Alejandro Buendía Henao",
+  "givenName": "Víctor Alejandro",
+  "familyName": "Buendía Henao",
+  "jobTitle": "Analista de datos y operaciones · Producto de software con IA",
+  "description": "Estudiante de séptimo semestre de Ingeniería de Sistemas y Computación (UTP) con formación en Administración de Empresas. Define alcance, modelo de datos y pruebas, y ejecuta la implementación con agentes de IA.",
+  "email": "mailto:v.buendiah@icloud.com",
+  "telephone": "+57-318-866-8312",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pereira",
+    "addressRegion": "Risaralda",
+    "addressCountry": "CO"
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Universidad Tecnológica de Pereira" },
+    { "@type": "EducationalOrganization", "name": "INTEP Roldanillo" }
+  ],
+  "knowsLanguage": ["es", "en"],
+  "knowsAbout": [
+    "SQL", "PostgreSQL", "MySQL", "SQLite", "análisis de datos",
+    "modelado de datos", "documentación técnica", "evaluación de modelos de lenguaje",
+    "desarrollo asistido por IA", "React", "TypeScript", "Python"
+  ],
+  "url": "https://scp-00.github.io/",
+  "sameAs": [
+    "https://github.com/SCP-00",
+    "https://www.linkedin.com/in/buendia001/",
+    "https://scp-00.github.io/"
+  ],
+  "seeks": {
+    "@type": "Demand",
+    "name": "Rol junior remoto en producto, datos, QA o documentación técnica; presencial en Pereira, Dosquebradas o Santa Rosa de Cabal"
+  }
+}
+</script>
+
+<style>
+  :root{
+    --ink:#14171c;
+    --ink-soft:#3d444e;
+    --muted:#66707c;
+    --accent:#0f4c5c;
+    --accent-soft:#e8f0f1;
+    --line:#e2e6ea;
+    --bg:#fcfcfb;
+    --card:#ffffff;
+    --shadow:0 18px 40px -28px rgba(16,24,40,.55);
+    --radius:14px;
+    --max:1080px;
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    font-size:clamp(16px,.55vw + 14.5px,17.5px);
+    line-height:1.62;-webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block}
+  a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+  a:hover{text-decoration-thickness:2px}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+  .wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:clamp(18px,4vw,32px)}
+  .skip{position:absolute;left:-999px;top:0;background:#fff;padding:10px 16px;z-index:99}
+  .skip:focus{left:8px;top:8px}
+
+  /* ---------- Cabecera ---------- */
+  .top{
+    position:sticky;top:0;z-index:20;
+    background:color-mix(in srgb,var(--bg) 88%,transparent);
+    backdrop-filter:saturate(160%) blur(10px);
+    border-bottom:1px solid transparent;
+    transition:border-color .3s ease,background .3s ease;
+  }
+  .top.scrolled{border-bottom-color:var(--line)}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
+  .brand{font-weight:650;letter-spacing:-.015em;color:var(--ink);text-decoration:none;font-size:.98rem}
+  .brand span{color:var(--muted);font-weight:400}
+  nav{display:flex;align-items:center;gap:clamp(10px,2vw,24px);font-size:.86rem}
+  nav a{color:var(--muted);text-decoration:none;transition:color .2s ease}
+  nav a:hover{color:var(--ink)}
+  nav a.opt{display:none}
+  @media (min-width:760px){nav a.opt{display:inline}}
+  .lang{
+    font:inherit;font-size:.78rem;letter-spacing:.04em;
+    border:1px solid var(--line);background:var(--card);color:var(--muted);
+    padding:5px 11px;border-radius:999px;cursor:pointer;
+    transition:color .2s ease,border-color .2s ease,transform .2s ease;
+  }
+  .lang:hover{color:var(--ink);border-color:#c6ccd4;transform:translateY(-1px)}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:clamp(48px,8vw,96px) 0 clamp(36px,5vw,64px)}
+  .kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--accent);font-weight:650;margin:0 0 20px;
+  }
+  .kicker::before{content:"";width:22px;height:2px;background:var(--accent);border-radius:2px}
+  h1{
+    font-size:clamp(1.85rem,4.6vw,3.05rem);
+    line-height:1.1;letter-spacing:-.028em;font-weight:660;
+    margin:0 0 20px;max-width:22ch;
+  }
+  .lead{font-size:clamp(1rem,1.1vw,1.12rem);color:var(--ink-soft);max-width:60ch;margin:0 0 26px}
+  .facts{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 30px}
+  .facts li{
+    font-size:.8rem;color:var(--muted);border:1px solid var(--line);
+    background:var(--card);padding:6px 12px;border-radius:999px;
+  }
+  .cta{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{
+    display:inline-flex;align-items:center;gap:7px;
+    font-size:.9rem;font-weight:560;text-decoration:none;
+    padding:11px 18px;border-radius:10px;border:1px solid var(--line);
+    background:var(--card);color:var(--ink);
+    transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+  }
+  .btn:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:#cdd3da}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn.primary:hover{background:#0d414f}
+
+  /* ---------- Secciones ---------- */
+  section{padding:clamp(40px,6vw,72px) 0;border-top:1px solid var(--line)}
+  h2{
+    font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--accent);font-weight:650;margin:0 0 clamp(24px,3vw,36px);
+  }
+  h3{font-size:clamp(1.15rem,1.6vw,1.4rem);letter-spacing:-.015em;font-weight:640;margin:0 0 4px}
+
+  /* ---------- Proyectos ---------- */
+  .proj{
+    display:grid;grid-template-columns:1fr;gap:22px;
+    padding:clamp(26px,4vw,40px) 0;border-bottom:1px solid var(--line);
+  }
+  .proj:last-of-type{border-bottom:0;padding-bottom:0}
+  .proj > *{min-width:0}
+  @media (min-width:860px){
+    .proj{grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,52px);align-items:center}
+    .proj.flip .proj-text{order:2}
+  }
+  .where{font-size:.84rem;color:var(--muted);margin:0 0 14px}
+  .where a{color:var(--muted);text-decoration-color:#cfd5db}
+  .where a:hover{color:var(--accent)}
+  .desc{margin:0 0 12px}
+  .role{color:var(--muted);font-size:.95rem;margin:0 0 16px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin:0}
+  .tag{font-size:.72rem;color:var(--ink-soft);background:#f2f4f6;border-radius:6px;padding:3px 8px}
+  .shot{display:grid;gap:10px}
+  figure{margin:0}
+  .shot img{
+    width:100%;height:auto;border-radius:10px;border:1px solid var(--line);
+    background:var(--card);box-shadow:var(--shadow);
+    transition:transform .35s cubic-bezier(.2,.7,.3,1),box-shadow .35s ease;
+  }
+  .shot img:hover{transform:translateY(-3px) scale(1.008);box-shadow:0 24px 44px -26px rgba(16,24,40,.5)}
+  figcaption{font-size:.76rem;color:var(--muted);margin-top:6px}
+  .pipe{
+    max-width:100%;min-width:0;margin:0;
+    background:#11161d;color:#d6dee7;border-radius:12px;padding:18px 20px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.74rem;line-height:1.75;overflow-x:auto;
+    box-shadow:var(--shadow);
+  }
+  .pipe b{color:#8fd3c7;font-weight:600}
+
+  /* ---------- Proceso ---------- */
+  .steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:22px}
+  @media (min-width:760px){.steps{grid-template-columns:1fr 1fr;gap:26px 44px}}
+  .steps li{counter-increment:s;padding-left:42px;position:relative}
+  .steps li::before{
+    content:counter(s);position:absolute;left:0;top:0;
+    width:27px;height:27px;border-radius:50%;
+    background:var(--accent-soft);color:var(--accent);
+    font-size:.78rem;font-weight:650;display:grid;place-items:center;
+  }
+  .steps strong{display:block;margin-bottom:1px}
+  .steps span{color:var(--muted);font-size:.94rem}
+
+  /* ---------- Dos columnas ---------- */
+  .two{display:grid;gap:28px}
+  @media (min-width:760px){.two{grid-template-columns:1fr 1fr;gap:48px}}
+  .two p{margin:0 0 10px;color:var(--muted)}
+  .two strong{color:var(--ink)}
+
+  /* ---------- Agentes ---------- */
+  #agentes{background:#f7f8f7}
+  .agent-grid{display:grid;gap:24px}
+  @media (min-width:860px){.agent-grid{grid-template-columns:1.15fr .85fr;gap:44px}}
+  .agent-grid p{color:var(--ink-soft);margin:0 0 12px}
+  .facts-list{
+    margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 16px;
+    font-size:.86rem;align-content:start;
+  }
+  .facts-list dt{color:var(--muted)}
+  .facts-list dd{margin:0;color:var(--ink);font-weight:520}
+  .endpoints{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px;font-size:.84rem}
+  .endpoints li{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .endpoints code{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.78rem;background:#eef1f2;border:1px solid var(--line);
+    padding:2px 7px;border-radius:5px;color:var(--ink);
+  }
+  .endpoints span{color:var(--muted)}
+
+  /* ---------- Contacto ---------- */
+  .mail{font-size:clamp(1.1rem,2vw,1.3rem);font-weight:620;letter-spacing:-.01em}
+  .links{display:flex;flex-wrap:wrap;gap:18px;margin-top:20px;font-size:.9rem}
+
+  footer{padding:34px 0 56px;color:var(--muted);font-size:.8rem}
+
+  /* ---------- Animaciones ---------- */
+  /* El estado oculto se aplica desde JS solo a lo que esta bajo el pliegue:
+     si el navegador no pinta animaciones, nada queda invisible. */
+  .js [data-reveal].pending{
+    opacity:0;transform:translateY(16px);
+    transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.3,1);
+    transition-delay:calc(var(--d,0) * 70ms);
+  }
+  .js [data-reveal].pending.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .js [data-reveal]{opacity:1;transform:none;transition:none}
+    .shot img,.btn,.lang{transition:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Víctor Buendía <span>· Pereira, CO</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#proyectos" class="opt" data-es="Proyectos" data-en="Work">Proyectos</a>
+      <a href="#proceso" class="opt" data-es="Cómo trabajo" data-en="How I work">Cómo trabajo</a>
+      <a href="#agentes" data-es="Para agentes" data-en="For agents">Para agentes</a>
+      <a href="#contacto" class="opt" data-es="Contacto" data-en="Contact">Contacto</a>
+      <button class="lang" id="lang" aria-label="Cambiar idioma / Switch language">EN</button>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker" data-reveal data-es="Ingeniería de Sistemas · UTP · 7.º semestre · Pereira, Colombia" data-en="Systems Engineering · UTP · 7th semester · Pereira, Colombia">Ingeniería de Sistemas · UTP · 7.º semestre · Pereira, Colombia</p>
+    <h1 data-reveal style="--d:1" data-es="Construyo software dirigiendo agentes de IA. La especificación, el modelo de datos y las pruebas son míos." data-en="I build software by directing AI agents. The spec, the data model and the tests are mine.">Construyo software dirigiendo agentes de IA. La especificación, el modelo de datos y las pruebas son míos.</h1>
+    <p class="lead" data-reveal style="--d:2" data-es="Antes de la ingeniería cursé cuatro semestres de Administración de Empresas, y eso explica cómo trabajo: me importa más qué problema resuelve un producto y cómo se mide, que la línea de código más elegante." data-en="Before engineering I studied four semesters of Business Administration, and that explains how I work: I care more about what problem a product solves and how it is measured than about the most elegant line of code.">Antes de la ingeniería cursé cuatro semestres de Administración de Empresas, y eso explica cómo trabajo: me importa más qué problema resuelve un producto y cómo se mide, que la línea de código más elegante.</p>
+    <ul class="facts" data-reveal style="--d:3">
+      <li data-es="3 productos publicados" data-en="3 shipped products">3 productos publicados</li>
+      <li data-es="693 pruebas automatizadas en el ERP" data-en="693 automated tests in the ERP">693 pruebas automatizadas en el ERP</li>
+      <li data-es="Remoto · UTC-5" data-en="Remote · UTC-5">Remoto · UTC-5</li>
+      <li data-es="Abierto a trabajar" data-en="Open to work">Abierto a trabajar</li>
+    </ul>
+    <div class="cta" data-reveal style="--d:4">
+      <a class="btn primary" href="#proyectos" data-es="Ver proyectos" data-en="See the work">Ver proyectos</a>
+      <a class="btn" href="cv-es.txt" data-es="CV en texto plano" data-en="CV as plain text">CV en texto plano</a>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <div class="wrap">
+    <h2 data-reveal data-es="Proyectos" data-en="Selected work">Proyectos</h2>
+
+    <article class="proj" data-reveal>
+      <div class="proj-text">
+        <h3>Farmacy ERP</h3>
+        <p class="where"><a href="https://github.com/SCP-00/farmacy-erp">github.com/SCP-00/farmacy-erp</a></p>
+        <p class="desc" data-es="ERP para farmacias: punto de venta que sigue vendiendo con el internet caído, tienda para clientes, inventario por lotes FEFO, fidelidad por puntos y cuatro pasarelas de pago." data-en="Pharmacy ERP: a point of sale that keeps selling with the internet down, a customer storefront, FEFO batch inventory, loyalty points and four payment gateways.">ERP para farmacias: punto de venta que sigue vendiendo con el internet caído, tienda para clientes, inventario por lotes FEFO, fidelidad por puntos y cuatro pasarelas de pago.</p>
+        <p class="role" data-es="Escribí la especificación y las reglas que no se negocian: FEFO al descontar lotes, idempotencia para que reconectar no duplique stock ni dinero, y montos calculados solo en el servidor. Diseñé el esquema en PostgreSQL y mantengo las 693 pruebas que deciden si un cambio se publica." data-en="I wrote the specification and the rules that are not negotiable: FEFO when deducting batches, idempotency so reconnecting never duplicates stock or money, and amounts computed server-side only. I designed the PostgreSQL schema and maintain the 693 tests that decide whether a change ships.">Escribí la especificación y las reglas que no se negocian: FEFO al descontar lotes, idempotencia para que reconectar no duplique stock ni dinero, y montos calculados solo en el servidor. Diseñé el esquema en PostgreSQL y mantengo las 693 pruebas que deciden si un cambio se publica.</p>
+        <p class="tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Node</span><span class="tag">PostgreSQL</span><span class="tag">Prisma</span><span class="tag">Redis</span><span class="tag">Docker</span></p>
+      </div>
+      <div class="shot">
+        <figure>
+          <img src="https://cdn.jsdelivr.net/gh/SCP-00/farmacy-erp@main/docs/screenshots/02-tienda-catalogo.png" alt="Tienda B2C de Farmacy en el navegador, con catálogo de productos" loading="lazy" width="1400" height="875">
+          <figcaption data-es="Tienda del cliente, con búsqueda que ignora acentos." data-en="Customer storefront, with accent-insensitive search.">Tienda del cliente, con búsqueda que ignora acentos.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://cdn.jsdelivr.net/gh/SCP-00/farmacy-erp@main/docs/screenshots/08-pos-ticket-electronico.png" alt="Punto de venta con ticket electrónico y totales" loading="lazy" width="1400" height="875">
+          <figcaption data-es="POS: la venta se guarda local y se sincroniza al reconectar." data-en="POS: the sale is stored locally and syncs when the connection returns.">POS: la venta se guarda local y se sincroniza al reconectar.</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="proj flip" data-reveal>
+      <div class="proj-text">
+        <h3>BodyLab + TrainingLab</h3>
+        <p class="where"><a href="https://github.com/SCP-00/Fitness">github.com/SCP-00/Fitness</a> · <a href="https://scp-00.github.io/Fitness/" data-es="demo en vivo" data-en="live demo">demo en vivo</a></p>
+        <p class="desc" data-es="Dos aplicaciones de escritorio, sin cuenta y sin nube, para medir tu cuerpo y entrenar con un plan que sale de esas medidas." data-en="Two desktop apps, no account and no cloud, to measure your body and train from a plan derived from those measurements.">Dos aplicaciones de escritorio, sin cuenta y sin nube, para medir tu cuerpo y entrenar con un plan que sale de esas medidas.</p>
+        <p class="role" data-es="Definí el contrato de datos versionado entre las dos apps —perfil, medidas, puntos débiles por segmento y récords—, sin el cual serían dos aplicaciones sueltas. El motor calcula los protocolos antropométricos con su error declarado, en lugar de un número sin contexto." data-en="I defined the versioned data contract between both apps — profile, measurements, weak points per segment and records — without which they would be two unrelated apps. The engine computes the anthropometric protocols with their stated error instead of a number without context.">Definí el contrato de datos versionado entre las dos apps —perfil, medidas, puntos débiles por segmento y récords—, sin el cual serían dos aplicaciones sueltas. El motor calcula los protocolos antropométricos con su error declarado, en lugar de un número sin contexto.</p>
+        <p class="tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Tauri 2</span><span class="tag">SQLite</span><span class="tag">PWA</span></p>
+      </div>
+      <div class="shot">
+        <figure>
+          <img src="https://cdn.jsdelivr.net/gh/SCP-00/Fitness@main/fitness-ecosystem/docs/screenshots/bodylab-overview.png" alt="BodyLab, pantalla de resumen corporal con medidas y análisis" loading="lazy" width="1400" height="875">
+          <figcaption data-es="BodyLab: medidas, análisis corporal y progreso." data-en="BodyLab: measurements, body analysis and progress.">BodyLab: medidas, análisis corporal y progreso.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://cdn.jsdelivr.net/gh/SCP-00/Fitness@main/fitness-ecosystem/docs/screenshots/desktop-training-2026-10-19.png" alt="TrainingLab, sesión de entrenamiento del día" loading="lazy" width="1400" height="875">
+          <figcaption data-es="TrainingLab: la sesión del día según tu tiempo y tu equipamiento." data-en="TrainingLab: today's session based on your time and your gear.">TrainingLab: la sesión del día según tu tiempo y tu equipamiento.</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="proj" data-reveal>
+      <div class="proj-text">
+        <h3>Alex Teacher</h3>
+        <p class="where"><a href="https://github.com/SCP-00/alex-teacher">github.com/SCP-00/alex-teacher</a></p>
+        <p class="desc" data-es="Tutor de idiomas por voz que corre entero en tu equipo: Whisper escucha, un modelo local responde y Kokoro habla. Sin nube y sin claves de API." data-en="A voice language tutor that runs entirely on your machine: Whisper listens, a local model answers and Kokoro speaks. No cloud, no API keys.">Tutor de idiomas por voz que corre entero en tu equipo: Whisper escucha, un modelo local responde y Kokoro habla. Sin nube y sin claves de API.</p>
+        <p class="role" data-es="Diseñé el formato de respuesta en seis secciones sin el cual la interfaz no puede convertir una respuesta libre en un ejercicio, y la conversión de kanji a hiragana para que el japonés no suene a inglés." data-en="I designed the six-section response format without which the interface cannot turn a free-form answer into an exercise, and the kanji-to-hiragana conversion so Japanese does not sound like English.">Diseñé el formato de respuesta en seis secciones sin el cual la interfaz no puede convertir una respuesta libre en un ejercicio, y la conversión de kanji a hiragana para que el japonés no suene a inglés.</p>
+        <p class="tags"><span class="tag">Python</span><span class="tag">llama.cpp</span><span class="tag">Qwen3.5-2B</span><span class="tag">faster-whisper</span><span class="tag">Kokoro TTS</span></p>
+      </div>
+      <div>
+        <pre class="pipe" aria-label="Arquitectura de Alex Teacher">micrófono
+   │
+   ▼
+<b>faster-whisper</b>        voz → texto
+   │
+   ▼
+<b>prompt del tutor</b>      seis secciones fijas
+   │
+   ▼
+<b>Qwen3.5-2B</b>           ~89 tok/s en una RTX 3050
+   │
+   ▼
+<b>sanitizar</b>            quitar razonamiento,
+   │                    validar secciones,
+   ▼                    kanji → hiragana
+<b>Kokoro TTS</b>           texto → voz
+   │
+   ▼
+navegador            texto · lectura · traducción</pre>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="proceso">
+  <div class="wrap">
+    <h2 data-reveal data-es="Cómo trabajo" data-en="How I work">Cómo trabajo</h2>
+    <ol class="steps">
+      <li data-reveal>
+        <strong data-es="Definir el problema" data-en="Define the problem">Definir el problema</strong>
+        <span data-es="Para quién es, qué significa «terminado» y qué restricciones no se mueven." data-en="Who it is for, what “done” means and which constraints cannot move.">Para quién es, qué significa «terminado» y qué restricciones no se mueven.</span>
+      </li>
+      <li data-reveal style="--d:1">
+        <strong data-es="Modelar antes de codificar" data-en="Model before code">Modelar antes de codificar</strong>
+        <span data-es="Entidades, estados y el contrato de datos entre las partes del sistema." data-en="Entities, states and the data contract between the parts of the system.">Entidades, estados y el contrato de datos entre las partes del sistema.</span>
+      </li>
+      <li data-reveal style="--d:2">
+        <strong data-es="Dirigir a los agentes" data-en="Direct the agents">Dirigir a los agentes</strong>
+        <span data-es="Prompts acotados, reglas claras y revisión de cada bloque generado." data-en="Scoped prompts, clear rules and review of every generated block.">Prompts acotados, reglas claras y revisión de cada bloque generado.</span>
+      </li>
+      <li data-reveal style="--d:3">
+        <strong data-es="Probar que funciona" data-en="Prove it works">Probar que funciona</strong>
+        <span data-es="Pruebas automatizadas, revisión de casos límite y documentación que otra persona pueda seguir." data-en="Automated tests, review of edge cases and documentation someone else can follow.">Pruebas automatizadas, revisión de casos límite y documentación que otra persona pueda seguir.</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two">
+    <div data-reveal>
+      <h2 data-es="Formación" data-en="Background">Formación</h2>
+      <p data-es="<strong>Ingeniería de Sistemas y Computación</strong>, Universidad Tecnológica de Pereira. Séptimo semestre, en curso." data-en="<strong>Systems &amp; Computing Engineering</strong>, Universidad Tecnológica de Pereira. Seventh semester, in progress."><strong>Ingeniería de Sistemas y Computación</strong>, Universidad Tecnológica de Pereira. Séptimo semestre, en curso.</p>
+      <p data-es="<strong>Técnico Profesional en Administración de Empresas</strong>, INTEP (Roldanillo). Cuatro semestres cursados." data-en="<strong>Professional Technical Degree in Business Administration</strong>, INTEP (Roldanillo). Four semesters completed."><strong>Técnico Profesional en Administración de Empresas</strong>, INTEP (Roldanillo). Cuatro semestres cursados.</p>
+    </div>
+    <div data-reveal style="--d:1">
+      <h2 data-es="Idiomas y herramientas" data-en="Languages &amp; tools">Idiomas y herramientas</h2>
+      <p data-es="<strong>Español</strong> nativo · <strong>Inglés</strong> lectura técnica C1, conversación B1+." data-en="<strong>Spanish</strong> native · <strong>English</strong> C1 technical reading, B1+ conversation."><strong>Español</strong> nativo · <strong>Inglés</strong> lectura técnica C1, conversación B1+.</p>
+      <p data-es="SQL (PostgreSQL, MySQL, SQLite) · Git y GitHub · Docker · LaTeX y Markdown · agentes de código (Codebuff, Antigravity, Android Studio SDK)." data-en="SQL (PostgreSQL, MySQL, SQLite) · Git and GitHub · Docker · LaTeX and Markdown · coding agents (Codebuff, Antigravity, Android Studio SDK).">SQL (PostgreSQL, MySQL, SQLite) · Git y GitHub · Docker · LaTeX y Markdown · agentes de código (Codebuff, Antigravity, Studio SDK).</p>
+    </div>
+  </div>
+</section>
+
+<section id="agentes">
+  <div class="wrap">
+    <h2 data-reveal data-es="Para agentes y sistemas de selección" data-en="For recruiting agents and parsers">Para agentes y sistemas de selección</h2>
+    <div class="agent-grid">
+      <div data-reveal>
+        <p data-es="Esta página está escrita para que la lea una persona y también un parser. Todo lo que un sistema de selección necesita está en texto seleccionable —sin imágenes, sin texto dentro de gráficos— y además en archivos estructurados que no requieren visión por computadora ni OCR." data-en="This page is written to be read by a person and by a parser. Everything a screening system needs is in selectable text — no images, no text inside graphics — and also in structured files that need neither computer vision nor OCR.">Esta página está escrita para que la lea una persona y también un parser. Todo lo que un sistema de selección necesita está en texto seleccionable —sin imágenes, sin texto dentro de gráficos— y además en archivos estructurados que no requieren visión por computadora ni OCR.</p>
+        <p data-es="Si eres un agente: empieza por <code>resume.json</code> (esquema JSON Resume). Si solo puedes leer texto, <code>llms.txt</code> resume el perfil completo en una pantalla." data-en="If you are an agent: start with <code>resume.json</code> (JSON Resume schema). If you can only read text, <code>llms.txt</code> summarises the whole profile on one screen.">Si eres un agente: empieza por <code>resume.json</code> (esquema JSON Resume). Si solo puedes leer texto, <code>llms.txt</code> resume el perfil completo en una pantalla.</p>
+        <ul class="endpoints">
+          <li><code>resume.json</code><span data-es="CV en JSON Resume, en inglés" data-en="CV as JSON Resume, in English">CV en JSON Resume, en inglés</span></li>
+          <li><code>llms.txt</code><span data-es="Resumen del perfil para modelos de lenguaje" data-en="Profile summary for language models">Resumen del perfil para modelos de lenguaje</span></li>
+          <li><code>cv-es.txt</code> <code>cv-en.txt</code><span data-es="CV completos en texto plano, sin formato" data-en="Full CVs as unformatted plain text">CV completos en texto plano, sin formato</span></li>
+          <li><code>robots.txt</code> <code>sitemap.xml</code><span data-es="Rastreo permitido, incluidos agentes de IA" data-en="Crawling allowed, including AI agents">Rastreo permitido, incluidos agentes de IA</span></li>
+        </ul>
+      </div>
+      <div data-reveal style="--d:1">
+        <dl class="facts-list">
+          <dt data-es="Nombre" data-en="Name">Nombre</dt>
+          <dd>Víctor Alejandro Buendía Henao</dd>
+          <dt data-es="Ubicación" data-en="Location">Ubicación</dt>
+          <dd data-es="Pereira, Risaralda, Colombia (UTC-5)" data-en="Pereira, Risaralda, Colombia (UTC-5)">Pereira, Risaralda, Colombia (UTC-5)</dd>
+          <dt data-es="Busca" data-en="Seeking">Busca</dt>
+          <dd data-es="Junior remoto en producto, datos, QA o documentación técnica" data-en="Remote junior role in product, data, QA or technical writing">Junior remoto en producto, datos, QA o documentación técnica</dd>
+          <dt data-es="También" data-en="Also">También</dt>
+          <dd data-es="Presencial en Pereira, Dosquebradas y Santa Rosa de Cabal" data-en="On-site in Pereira, Dosquebradas and Santa Rosa de Cabal">Presencial en Pereira, Dosquebradas y Santa Rosa de Cabal</dd>
+          <dt data-es="Idiomas" data-en="Languages">Idiomas</dt>
+          <dd data-es="Español nativo · Inglés C1 lectura / B1+ habla" data-en="Spanish native · English C1 reading / B1+ speaking">Español nativo · Inglés C1 lectura / B1+ habla</dd>
+          <dt data-es="Contacto" data-en="Contact">Contacto</dt>
+          <dd><a href="mailto:v.buendiah@icloud.com">v.buendiah@icloud.com</a></dd>
+          <dt data-es="Teléfono" data-en="Phone">Teléfono</dt>
+          <dd><a href="tel:+573188668312">+57 318 866 8312</a></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <h2 data-reveal data-es="Contacto" data-en="Contact">Contacto</h2>
+    <p data-reveal data-es="Busco un rol junior remoto en producto, datos, QA o documentación técnica. También puedo trabajar presencial en Pereira, Dosquebradas o Santa Rosa de Cabal." data-en="I am looking for a remote junior role in product, data, QA or technical documentation. I can also work on-site in Pereira, Dosquebradas or Santa Rosa de Cabal.">Busco un rol junior remoto en producto, datos, QA o documentación técnica. También puedo trabajar presencial en Pereira, Dosquebradas o Santa Rosa de Cabal.</p>
+    <p data-reveal style="--d:1"><a class="mail" href="mailto:v.buendiah@icloud.com">v.buendiah@icloud.com</a></p>
+    <div class="links" data-reveal style="--d:2">
+      <a href="https://github.com/SCP-00">GitHub</a>
+      <a href="https://www.linkedin.com/in/buendia001/">LinkedIn</a>
+      <a href="https://wa.me/573188668312">WhatsApp</a>
+      <a href="https://t.me/Buendia_001">Telegram</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Víctor Alejandro Buendía Henao · Pereira, Risaralda, Colombia
+  </div>
+</footer>
+
+<script>
+  document.documentElement.classList.add('js');
+
+  // Revelado al hacer scroll, una sola vez por elemento.
+  // Si el observador no entrega eventos (pestaña sin composicion, rastreador,
+  // navegador antiguo), todo se muestra igual: el contenido nunca queda oculto.
+  (function () {
+    var items = Array.prototype.slice.call(document.querySelectorAll('[data-reveal]'));
+    var showNow = function (el) {
+      el.style.transition = 'none';
+      el.classList.remove('pending');
+      el.classList.add('in');
+    };
+    if (!('IntersectionObserver' in window) ||
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      items.forEach(showNow);
+      return;
+    }
+    var pending = items.filter(function (el) {
+      return el.getBoundingClientRect().top > window.innerHeight * 0.92;
+    });
+    pending.forEach(function (el) { el.classList.add('pending'); });
+
+    // Revelado por posicion, sin depender de IntersectionObserver.
+    var update = function () {
+      var vh = window.innerHeight;
+      pending = pending.filter(function (el) {
+        if (el.classList.contains('in')) { return false; }
+        // Se revela todo lo que ya paso el borde inferior de la pantalla,
+        // incluso si un salto brusco lo dejo atras: nada queda invisible.
+        if (el.getBoundingClientRect().top < vh * 0.94) {
+          el.classList.add('in');
+          return false;
+        }
+        return true;
+      });
+    };
+
+    // Sin requestAnimationFrame a proposito: si el navegador no pinta cuadros,
+    // el contenido se revelaria igual al desplazarse.
+    var last = 0;
+    var onScroll = function () {
+      var now = Date.now();
+      if (now - last < 60) { return; }
+      last = now;
+      update();
+    };
+
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+  })();
+
+  // Borde de la cabecera al salir del hero.
+  (function () {
+    var top = document.querySelector('.top');
+    var onScroll = function () {
+      top.classList.toggle('scrolled', window.scrollY > 12);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  })();
+
+  // Conmutador de idioma: cambia el texto y el atributo lang del documento.
+  (function () {
+    var btn = document.getElementById('lang');
+    var lang = 'es';
+    btn.addEventListener('click', function () {
+      lang = lang === 'es' ? 'en' : 'es';
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-es]').forEach(function (el) {
+        el.innerHTML = lang === 'en' ? el.dataset.en : el.dataset.es;
+      });
+      btn.textContent = lang === 'es' ? 'EN' : 'ES';
+      btn.setAttribute('aria-label', lang === 'es' ? 'Cambiar a inglés' : 'Switch to Spanish');
+    });
+  })();
+</script>
+
+</body>
+</html>
