@@ -1,0 +1,28 @@
+# Rastreo permitido para buscadores y para agentes de IA.
+# El contenido esta pensado para ser leido por maquinas: ver resume.json y llms.txt.
+
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://scp-00.github.io/sitemap.xml

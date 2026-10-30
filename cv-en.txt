@@ -1,0 +1,85 @@
+VICTOR ALEJANDRO BUENDIA HENAO
+Data & Operations Analyst · AI-Assisted Product Builder · Systems Engineering Student
+
+Pereira, Risaralda, Colombia (UTC-5) · Open to remote and on-site work
++57 318 866 8312 (WhatsApp/Telegram) · v.buendiah@icloud.com
+github.com/SCP-00 · linkedin.com/in/buendia001 · scp-00.github.io
+
+PROFESSIONAL SUMMARY
+
+Seventh-semester Systems & Computing Engineering student at Universidad Tecnologica de
+Pereira, with prior coursework in Business Administration. I use AI coding agents to take
+software from idea to working product, and I own the product side: scope, data model,
+documentation and testing. Comfortable with relational databases (PostgreSQL, MySQL,
+SQLite) - schema design, joins, queries and aggregations for business analysis - and with
+spreadsheets, reports and metrics. I evaluate model output against explicit criteria
+rather than trusting it, and I write technical documentation in Spanish and English.
+Looking for a junior role in product, data, operations or technical documentation.
+
+FEATURED PROJECTS
+
+Farmacy ERP - Pharmacy POS & B2C store
+github.com/SCP-00/farmacy-erp
+- Owned product scope and data model for a pharmacy ERP: offline-capable point of sale,
+  B2C storefront, FEFO batch inventory, loyalty points and role-based access control
+  (RBAC).
+- Directed integration of four payment gateways (Wompi, Stripe, MercadoPago, cash) on a
+  TypeScript/Node API with PostgreSQL (Prisma) and Redis, containerized with Docker.
+- Wrote the product specification and maintain a 693-test suite used as the release
+  acceptance criterion.
+
+BodyLab + TrainingLab - local-first health & training ecosystem
+github.com/SCP-00/Fitness
+- Self-directed product in a TypeScript monorepo (React, Tauri, SQLite) running 100 %
+  offline with no accounts: explained anthropometry protocols plus a training planner
+  driven by weak-point analysis.
+- Defined the versioned export contract between both apps, delivered a browser demo and
+  desktop builds.
+
+ALEX Voice suite - 100 % on-device AI voice apps
+github.com/topics/alex-voice
+- Eight apps (language tutor, eight-language speech translator, real-time voice chat,
+  audiobook generator) on Whisper (ASR), llama.cpp and TTS models, each installable with
+  a single command.
+
+TECHNICAL SKILLS
+
+- Databases & analysis: PostgreSQL, MySQL, SQLite; schema design, joins, aggregations,
+  queries, query optimization, data quality and business data analysis.
+- Reporting & office: Excel and spreadsheets for reports, metrics and KPI tracking;
+  LaTeX, Markdown, Docs/Word and presentations.
+- Product & process: requirements gathering, scope and acceptance criteria, process
+  modeling, research and benchmarking.
+- AI-assisted delivery: coding agents (Codebuff/Freebuff, Antigravity, Android Studio
+  SDK); writing instructions and prompts, evaluating LLM output against rubrics and
+  written guidelines, and checking reasoning instead of accepting it; TTS/STT and image
+  generation.
+- Stack: TypeScript, React, Node/Express, Python, Prisma, Redis, Docker, Git and GitHub.
+- Automation & documentation: automating repetitive work with scripts and agents;
+  technical writing in English.
+- Languages: Spanish (native); English (C1 technical reading, B1+ conversation).
+
+EDUCATION
+
+B.S. in Systems & Computing Engineering - Universidad Tecnologica de Pereira (UTP)
+In progress · 2026
+Relevant coursework: databases, software architecture and operating systems.
+
+Professional Technical Degree in Business Administration - INTEP, Roldanillo
+4 semesters completed
+Accounting, operations management, marketing and financial analysis.
+
+High School Diploma - Institucion Educativa Jose Maria Falla, El Dovio
+Graduated
+
+WORK EXPERIENCE
+
+Food service operations roles - El Dovio, Valle del Cauca, Colombia · 2025-2026
+Wing Zone, 2026 (beverages & customer service) · Meraki, 2026 (fried station lead) ·
+Alma, 2025 (kitchen assistant).
+- Served customers and dispatched orders during peak hours while keeping service times
+  stable.
+- Prepared and quality-checked food and beverages under hygiene standards and brand
+  protocols.
+- Coordinated with kitchen and floor teams to sustain order flow during rush periods and
+  shift closings.

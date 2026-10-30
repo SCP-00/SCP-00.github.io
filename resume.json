@@ -1,0 +1,142 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Víctor Alejandro Buendía Henao",
+    "label": "Data & Operations Analyst · AI-assisted product builder",
+    "email": "v.buendiah@icloud.com",
+    "phone": "+57 318 866 8312",
+    "url": "https://scp-00.github.io/",
+    "summary": "Seventh-semester Systems & Computing Engineering student at Universidad Tecnológica de Pereira, Colombia, with four semesters of Business Administration. I define scope, data model, documentation and tests, and direct AI coding agents for the implementation. Comfortable with relational databases (PostgreSQL, MySQL, SQLite), SQL analysis and reporting. I evaluate model output against explicit criteria instead of trusting it. Native Spanish; English C1 technical reading, B1+ speaking.",
+    "location": {
+      "city": "Pereira",
+      "region": "Risaralda",
+      "countryCode": "CO"
+    },
+    "profiles": [
+      { "network": "Portfolio", "username": "SCP-00", "url": "https://scp-00.github.io/" },
+      { "network": "GitHub", "username": "SCP-00", "url": "https://github.com/SCP-00" },
+      { "network": "LinkedIn", "username": "buendia001", "url": "https://www.linkedin.com/in/buendia001/" }
+    ]
+  },
+  "work": [
+    {
+      "name": "Wing Zone",
+      "position": "Customer service and bar",
+      "location": "El Dovio, Valle del Cauca, Colombia",
+      "startDate": "2026",
+      "endDate": "2026",
+      "summary": "Customer-facing role in a high-volume restaurant: counter and phone orders, dispatch times during peak hours, end-of-shift counts and handover."
+    },
+    {
+      "name": "Alma",
+      "position": "Kitchen assistant",
+      "location": "El Dovio, Valle del Cauca, Colombia",
+      "startDate": "2025",
+      "endDate": "2025",
+      "summary": "Food preparation following recipes and portions, quality control before service, hygiene and station order."
+    },
+    {
+      "name": "Meraki",
+      "position": "Fried station lead",
+      "location": "El Dovio, Valle del Cauca, Colombia",
+      "startDate": "2026",
+      "endDate": "2026",
+      "summary": "Coordinated the fried station during high-occupancy service, prioritising orders and checking temperature and presentation before handover."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Tecnológica de Pereira",
+      "area": "Systems & Computing Engineering",
+      "studyType": "B.S. (in progress)",
+      "endDate": "",
+      "summary": "Seventh semester. Coursework: databases, software architecture, operating systems."
+    },
+    {
+      "institution": "INTEP Roldanillo",
+      "area": "Business Administration",
+      "studyType": "Professional technical degree (four semesters completed)",
+      "summary": "Accounting, operations management, marketing and financial analysis."
+    },
+    {
+      "institution": "Institución Educativa José María Falla",
+      "area": "High school diploma",
+      "location": "El Dovio, Valle del Cauca, Colombia"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Databases & analysis",
+      "level": "Working knowledge",
+      "keywords": ["PostgreSQL", "MySQL", "SQLite", "SQL", "schema design", "joins", "aggregations", "queries", "data quality", "business data analysis"]
+    },
+    {
+      "name": "Reporting & office",
+      "level": "Working knowledge",
+      "keywords": ["Excel", "spreadsheets", "reports", "metrics", "KPI", "LaTeX", "Markdown", "Google Docs", "presentations"]
+    },
+    {
+      "name": "Product & process",
+      "level": "Working knowledge",
+      "keywords": ["requirements gathering", "scope definition", "acceptance criteria", "process modeling", "research", "benchmarking"]
+    },
+    {
+      "name": "AI-assisted delivery",
+      "level": "Daily use",
+      "keywords": ["coding agents", "prompt engineering", "LLM output evaluation", "rubrics", "written guidelines", "reasoning review", "TTS/STT"]
+    },
+    {
+      "name": "Engineering",
+      "level": "Working knowledge",
+      "keywords": ["TypeScript", "React", "Node.js", "Python", "Prisma", "Redis", "Docker", "Git", "GitHub"]
+    }
+  ],
+  "languages": [
+    { "language": "Spanish", "fluency": "Native" },
+    { "language": "English", "fluency": "C1 technical reading, B1+ speaking" }
+  ],
+  "projects": [
+    {
+      "name": "Farmacy ERP",
+      "description": "Pharmacy ERP with an offline-capable point of sale, B2C storefront, FEFO batch inventory, loyalty points, RBAC and four payment gateways.",
+      "highlights": [
+        "Owned product scope and data model; defined non-negotiable rules for FEFO deduction, offline idempotency and server-side money computation.",
+        "Designed the PostgreSQL schema and maintain 693 automated tests used as the release acceptance criterion.",
+        "Four payment gateways (Wompi, Stripe, MercadoPago, cash) on a TypeScript/Node API with Prisma and Redis, containerised with Docker."
+      ],
+      "keywords": ["TypeScript", "React", "Node.js", "PostgreSQL", "Prisma", "Redis", "Docker"],
+      "url": "https://github.com/SCP-00/farmacy-erp"
+    },
+    {
+      "name": "BodyLab + TrainingLab",
+      "description": "Local-first desktop ecosystem: measure your body, then train with a plan derived from those measurements. No accounts, no servers, no telemetry.",
+      "highlights": [
+        "Defined the versioned data contract between both applications (profile, measurements, weak points, records).",
+        "Anthropometry engine that reports each protocol with its stated error instead of a number without context."
+      ],
+      "keywords": ["TypeScript", "React", "Tauri 2", "SQLite", "PWA"],
+      "url": "https://github.com/SCP-00/Fitness"
+    },
+    {
+      "name": "Alex Teacher",
+      "description": "On-device voice language tutor: Whisper for speech-to-text, a local LLM for answers, Kokoro for speech synthesis. No cloud, no API keys.",
+      "highlights": [
+        "Designed the six-section response format the interface needs to turn a free-form answer into an exercise.",
+        "Kanji-to-hiragana conversion so Japanese pronunciation is correct."
+      ],
+      "keywords": ["Python", "llama.cpp", "Qwen3.5-2B", "faster-whisper", "Kokoro TTS"],
+      "url": "https://github.com/SCP-00/alex-teacher"
+    }
+  ],
+  "meta": {
+    "version": "1.0.0",
+    "canonical": "resume.json",
+    "language": "en",
+    "note": "Employment history carries years only (Alma 2025; Wing Zone and Meraki 2026). Months are not available, so do not infer overlapping full-year roles.",
+    "seeking": {
+      "roles": ["Junior data analyst", "Product operations", "QA analyst", "Technical writer", "AI evaluator / AI trainer", "Technical support"],
+      "workMode": ["remote", "on-site"],
+      "locations": ["Pereira", "Dosquebradas", "Santa Rosa de Cabal", "Remote (UTC-5)"]
+    }
+  }
+}

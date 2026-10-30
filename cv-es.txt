@@ -1,0 +1,85 @@
+VÍCTOR ALEJANDRO BUENDÍA HENAO
+Análisis de datos y operaciones · Producto de software con IA · Ing. de Sistemas (7.º semestre)
+
+Pereira, Risaralda · Remoto (UTC-5) · Presencial en Pereira, Dosquebradas y Santa Rosa
++57 318 866 8312 (WhatsApp/Telegram) · v.buendiah@icloud.com
+github.com/SCP-00 · linkedin.com/in/buendia001 · scp-00.github.io
+
+PERFIL PROFESIONAL
+
+Estudiante de séptimo semestre de Ingeniería de Sistemas y Computación (UTP), con
+formación previa en Administración de Empresas. Trabajo con agentes de IA para llevar
+proyectos de software de la idea al producto funcionando, y me encargo de la parte de
+producto: alcance, modelo de datos, documentación y pruebas. Diseño y consulto bases de
+datos relacionales (PostgreSQL, MySQL, SQLite): esquemas, joins y agregaciones para
+análisis de negocio; construyo reportes e indicadores en hojas de cálculo y reviso la
+calidad de los datos antes de usarlos. Redacto documentación técnica en español e
+inglés. Busco un rol junior en producto, datos, operaciones o documentación técnica.
+
+PROYECTOS DESTACADOS
+
+Farmacy ERP — POS y tienda B2C para farmacia
+github.com/SCP-00/farmacy-erp
+- Definí el alcance y el modelo de datos de un ERP farmacéutico: punto de venta con
+  operación sin conexión, tienda B2C, inventario por lotes bajo criterio FEFO,
+  fidelización por puntos y control de acceso por roles (RBAC).
+- Integré cuatro medios de pago (Wompi, Stripe, MercadoPago y efectivo) sobre
+  TypeScript/Node con PostgreSQL (Prisma) y Redis, desplegable con Docker.
+- Redacté la especificación del producto y mantengo una suite de 693 pruebas
+  automatizadas que uso como criterio de aceptación.
+
+BodyLab + TrainingLab — ecosistema de salud y entrenamiento local-first
+github.com/SCP-00/Fitness
+- Producto propio en monorepo TypeScript (React, Tauri, SQLite) que funciona 100 % sin
+  conexión y sin cuentas de usuario: antropometría con protocolos explicados y
+  planificador de entrenamiento alimentado por el análisis de puntos débiles.
+- Definí el contrato de exportación versionado entre ambas aplicaciones, más demo web y
+  build de escritorio.
+
+Suite ALEX Voice — aplicaciones de voz con IA 100 % locales
+github.com/topics/alex-voice
+- Familia de ocho aplicaciones (tutor de idiomas, traductor de voz en ocho idiomas,
+  conversación en tiempo real y audiolibros) sobre Whisper (ASR), llama.cpp y modelos
+  TTS, con instalación en un solo comando.
+
+HABILIDADES TÉCNICAS
+
+- Bases de datos y análisis: PostgreSQL, MySQL y SQLite; diseño de tablas, joins,
+  agregaciones, consultas, optimización de búsquedas, calidad de datos y análisis de
+  negocio.
+- Reportes y ofimática: Excel y hojas de cálculo para reportes e indicadores; LaTeX,
+  Markdown, Docs/Word y presentaciones.
+- Producto y procesos: levantamiento de requerimientos, alcance y criterios de
+  aceptación, modelado de procesos, investigación y benchmarking.
+- Desarrollo asistido por IA: agentes de código (Codebuff/Freebuff, Antigravity, Android
+  Studio SDK); escritura de instrucciones y prompts, evaluación de respuestas de modelos
+  con criterios explícitos y revisión de razonamiento; TTS/STT e imagen.
+- Stack: TypeScript, React, Node/Express, Python, Prisma, Redis, Docker, Git y GitHub.
+- Automatización y documentación: automatización de tareas repetitivas con scripts y
+  agentes; documentación técnica y redacción en inglés.
+- Idiomas: español nativo; inglés con lectura técnica C1 y conversación B1+.
+
+EDUCACIÓN
+
+Ingeniería de Sistemas y Computación — Universidad Tecnológica de Pereira (UTP)
+7.º semestre · 2026
+Cursos relevantes: bases de datos, arquitectura de software y sistemas operativos.
+
+Técnico Profesional en Administración de Empresas — INTEP, Roldanillo
+4 semestres cursados
+Contabilidad, gestión de operaciones, mercadeo y análisis financiero.
+
+Bachiller Académico — Institución Educativa José María Falla, El Dovio
+Graduado
+
+EXPERIENCIA LABORAL
+
+Roles operativos en servicio de alimentos — El Dovio, Valle del Cauca · 2025-2026
+Wing Zone, 2026 (bebidas y atención al cliente) · Meraki, 2026 (encargado de frituras) ·
+Alma, 2025 (asistente de cocina).
+- Atención directa a clientes y despacho de productos en horas de alta demanda, con
+  tiempos de servicio estables.
+- Preparación y control de calidad de alimentos y bebidas bajo estándares de higiene y
+  protocolos de la marca.
+- Coordinación con cocina y salón para sostener el flujo de pedidos en picos de
+  ocupación y cierres de turno.

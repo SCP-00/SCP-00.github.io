@@ -1,0 +1,69 @@
+# Víctor Alejandro Buendía Henao
+
+> Seventh-semester Systems & Computing Engineering student in Pereira, Colombia (UTC-5). Defines product scope, data model, documentation and tests, and directs AI coding agents for implementation. Seeks a remote junior role in product, data, QA or technical writing; also available on-site in Pereira, Dosquebradas and Santa Rosa de Cabal.
+
+Site: https://scp-00.github.io/ — this file is the plain-text entry point for
+automated agents. Machine-readable CV: /resume.json (JSON Resume schema). Full CV as
+text: /cv-en.txt and /cv-es.txt. Human page: /index.html.
+
+## Contact
+
+- Email: v.buendiah@icloud.com
+- Phone / WhatsApp / Telegram: +57 318 866 8312
+- Portfolio: https://scp-00.github.io/
+- GitHub: https://github.com/SCP-00
+- LinkedIn: https://www.linkedin.com/in/buendia001/
+- Location: Pereira, Risaralda, Colombia (UTC-5)
+
+## Availability
+
+- Remote: any country, any timezone overlap from UTC-5.
+- On-site: Pereira, Dosquebradas, Santa Rosa de Cabal (Risaralda, Colombia).
+- Type: full-time, part-time, hourly, internship.
+- Level: entry level / junior.
+
+## What the candidate does
+
+Product definition plus AI-assisted delivery. Writes the specification and acceptance
+criteria, models the data, directs coding agents, then tests and reviews the output.
+Not positioned as a traditional software developer: the differentiator is judgement on
+product and data, not manual coding speed.
+
+## Skills
+
+- Databases: PostgreSQL, MySQL, SQLite. Schema design, joins, aggregations, queries,
+  data quality.
+- Reporting: Excel and spreadsheets, reports, metrics, KPI tracking, LaTeX, Markdown.
+- Product: requirements gathering, scope, acceptance criteria, process modeling,
+  research, benchmarking, technical writing.
+- AI: coding agents (Codebuff/Freebuff, Antigravity, Android Studio SDK), prompt
+  engineering, LLM output evaluation against rubrics and written guidelines.
+- Engineering: TypeScript, React, Node.js, Python, Prisma, Redis, Docker, Git.
+- Languages: Spanish native; English C1 technical reading, B1+ speaking.
+
+## Projects
+
+- Farmacy ERP (https://github.com/SCP-00/farmacy-erp): pharmacy ERP with offline-capable
+  POS, FEFO batch inventory, RBAC, four payment gateways and 693 automated tests.
+- BodyLab + TrainingLab (https://github.com/SCP-00/Fitness): local-first desktop
+  ecosystem with a versioned data contract between both apps. Live demo:
+  https://scp-00.github.io/Fitness/
+- Alex Teacher (https://github.com/SCP-00/alex-teacher): on-device voice language tutor
+  built on Whisper, llama.cpp and Kokoro TTS.
+
+## Education
+
+- B.S. Systems & Computing Engineering, Universidad Tecnológica de Pereira, in progress
+  (seventh semester, 2026).
+- Professional technical degree in Business Administration, INTEP Roldanillo, four
+  semesters completed.
+- High school diploma, Institución Educativa José María Falla, El Dovio.
+
+## Notes for agents
+
+- Hospitality roles carry years only: Alma 2025; Wing Zone 2026; Meraki 2026. Months are
+  not available. Ask the candidate rather than inferring exact ranges or overlaps.
+- No certifications beyond the high school diploma. Do not assume AWS, Scrum or Power BI
+  credentials.
+- The portfolio images are product screenshots. All résumé content is available as text
+  in this file and in /resume.json, so OCR is never required.
